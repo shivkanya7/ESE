@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">    
+		<title>Login Form</title>
+		<style>
+			* {    
+				box-sizing: border-box;    
+			}    
+
+			#heading{
+				height:70px;
+				width:100%;
+				background-color:;
+			}
+
+			input[type=text], select, textarea {    
+				width: 100%;    
+				padding: 12px;    
+				border: 1px solid rgb(70, 68, 68);    
+				border-radius: 4px;    
+				resize: vertical;    
+			}
+
+
+			input[type=submit]:hover {    
+				background-color: #45a049;    
+			}  
+			input[type=reset],input[type=submit]{
+				background-color: rgb(37, 116, 161);
+				color: white;
+				padding: 12px 20px;
+				border: none;
+				border-radius:4px;
+				cursor:pointer;
+				float:left;
+				margin:5px;
+			}
+
+
+
+			.container {    
+				border-radius: 5px;    
+				background-color: #f2f2f2;    
+				padding: 20px;    
+			}    
+
+			.col-25{
+				float:left;
+				width:40%
+				margin-top:6px;
+			}
+
+			.col-75{
+				float:left;
+				width:75%;
+				margin-top:6px;
+			}
+
+			.row:after {    
+			content: "";    
+			display: table;    
+			clear: both;    
+		}    
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2 style="color:blue;text-align:center">Login</h2>
+			<form style="align:center">
+				<div class="row">
+					<div class="col-25">
+						<label for="fname" >First Name:</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="fname" name="fname" placeholder="Your name..." required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-25">
+						<label for="lname">Last Name:</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="lname" name="lname" placeholder="Your last name..." required>
+					</div>
+				</div>
+
+				
+
+				<div class="row">
+					<div class="col-25">
+						<label for="email">Email:  </label>	
+					</div>
+					<div class="col-75">
+						<input type="text" id="email" name="email" placeholder="ex.abc@gmail.com" required>
+					</div>
+				</div>
+				
+				<div class="row">
+						<input type="submit" value="Login" onclick="alert('Logged in')">
+
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="add.css">
+        <title>Rate</title>
+
+
+        <style>
+             table th, 
+    table tr:nth-child(2n+2) {
+      background: #e7e7e7;
+    }
+      
+    table th, 
+    table td {
+      padding: 20px 50px;
+    }
+      
+    table th {
+      border-bottom: 1px solid #d4d4d4;
+    }
+
+
+    .stars-outer {
+        display: inline-block;
+        position: relative;
+        font-family: FontAwesome;
+      }
+       
+      .stars-outer::before {
+        content: "\f006 \f006 \f006 \f006 \f006";
+      }
+       
+      .stars-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+      }
+       
+      .stars-inner::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        color: #f8ce0b;
+      }     
+
+
+      
+
+
+
+</style>
+	
+	</head> 
+	
+	<body> 
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="Blog1.html">Blog1</a>
+            <a href="Blog2.html">Blog2</a>
+            <a href="Blog3.html">Blog3</a>
+            <a href="contactus.html">Contact US</a>
+            <a href="rate.html">Rate</a>
+            <a href="login.html">Login</a>
+            </div>
+        <header><h1 style="text-align: center;"> Give Rating</header></h1><hr>
+        <div class="stars-outer"></div>
+  
+
+       
+        <table>
+            <thead>
+               <tr>
+                 <th>Health Blog</th>
+                 <th>Rating</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr class="hotel_a">
+                 <td>The Healthy Maven</td>
+                 <td>
+                   <div class="stars-outer">
+                     <div class="stars-inner"></div>
+                   </div>
+                 </td>
+               </tr>
+               <tr class="hotel_b">
+                 <td>Healthy Meal</td>
+                 <td>
+                   <div class="stars-outer">
+                     <div class="stars-inner"></div>
+                   </div>
+                 </td>
+               </tr>
+               <tr class="hotel_c">
+                <td>Health is Wealth</td>
+                <td>
+                  <div class="stars-outer">
+                    <div class="stars-inner"></div>
+                  </div>
+                </td>
+              </tr>
+           
+            
+               <!-- 3 more rows here -->
+                
+             </tbody>
+           </table>
+        
+       
+        <hr>
+         <footer>
+            &#169 Copyright 2020 <br>
+            <p>Designed By: Shivkanya Birajdar</p>
+                
+        </footer> 
+            
+    </body> 
+</html>		
